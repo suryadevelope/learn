@@ -12,7 +12,14 @@
         <button id="btn1" type="button" style="height: 30px" >right side</button>
     <div id="left" style="position: unset; border: 5px; border-radius:10px; border-style: solid; border-color: rgb(245, 26, 26);">
         <h3>upload data here</h3>
-        <input placeholder="Enter your name"></input>
+        
+            <input id="name" placeholder="Enter your name" style="margin-top: 1rem;"></input><br>
+            <input id="age" type="number" placeholder="Enter your age" style="margin-top: 1rem;"></input><br>
+            <button id="upload" style="margin-top: 1rem;">upload</button><br>
+
+
+        
+        
     </div>
     <div id="right" style="position: unset; display: none; border: 5px; border-radius:10px; border-style: solid; border-color: rgb(12, 241, 24);">
         <h3>get the data here</h3>
@@ -20,5 +27,28 @@
     </div>
     </div>
 </body>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyC_3IbrP1Zs-VJRFpsxdj_wLfBF6cCAfT4",
+    authDomain: "fir-27530.firebaseapp.com",
+    databaseURL: "https://fir-27530.firebaseio.com",
+    projectId: "fir-27530",
+    storageBucket: "fir-27530.appspot.com",
+    messagingSenderId: "574312302229",
+    appId: "1:574312302229:web:9aff8cc0495699341bfd9c"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
 <script src="js/main.js"></script>
 </html>
