@@ -1,4 +1,12 @@
 #btn{
     background-color: red;
     color: white;
+    width: 40%;
+    height: 30%;
+}
+#btn1{
+    background-color: rgb(15, 235, 26);
+    color: white;
+    width: 40%;
+    height: 30%;
 }

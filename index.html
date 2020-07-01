@@ -7,11 +7,18 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div style="position:unset;" align="center" style="background-color: rgb(29, 235, 73);">  
-    <input type="text" placeholder="Enter name"></input>
-    <button id="btn" type="button">click me</button>
+    <div align="center" style="position:unset;">  
+        <button id="btn" type="button" style="height: 30px;">left side</button>
+        <button id="btn1" type="button" style="height: 30px" >right side</button>
+    <div id="left" style="position: unset; border: 5px; border-radius:10px; border-style: solid; border-color: rgb(245, 26, 26);">
+        <h3>upload data here</h3>
+        <input placeholder="Enter your name"></input>
     </div>
-
+    <div id="right" style="position: unset; display: none; border: 5px; border-radius:10px; border-style: solid; border-color: rgb(12, 241, 24);">
+        <h3>get the data here</h3>
+        <button id="get">Get data</button>
+    </div>
+    </div>
 </body>
 <script src="js/main.js"></script>
 </html>
