@@ -53,6 +53,7 @@ function getotpnu(){
     // We are using the test phone numbers we created before
 // var phoneNumber = document.getElementById("phoneNumber").value;
 console.log("started number");
+alert("started number");
 
 var phoneNumber = "+91"+phone.value;
 appVerifier = window.recaptchaVerifier;
@@ -63,10 +64,13 @@ firebase
 .then(function(confirmationResult) {
    window.confirmationResult = confirmationResult;
    console.log("otpsend");
+   alert("otpsend");
    document.getElementById("recaptcha-container").style.display='none';
 })
 .catch(function(error) {
    console.log("cant get otp: "+error);
+   alert("cant get otp: "+error);
+   
 });
 }
 
@@ -83,11 +87,13 @@ gototp.addEventListener('click',function(){
     // var code = document.getElementById("code").value;
     var code = otpbx.value;
     console.log("otp: "+code);
+    alert("otp: "+code);
     confirmationResult
     .confirm(code)
     .then(function(result) {
         var user = result.uid;
         console.log("user data: "+user);
+        alert("user data: "+user);
     })
     .catch(function(error) {
         console.log(error);
