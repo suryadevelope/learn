@@ -11,13 +11,28 @@
         <button id="btn" type="button" style="height: 30px;">left side</button>
         <button id="btn1" type="button" style="height: 30px" >right side</button>
     <div id="left" style="position: unset; border: 5px; border-radius:10px; border-style: solid; border-color: rgb(245, 26, 26);">
+       <div>
         <h3>upload data here</h3>
         
             <input id="name" placeholder="Enter your name" style="margin-top: 1rem;"></input><br>
             <input id="age" type="number" placeholder="Enter your age" style="margin-top: 1rem;"></input><br>
             <button id="upload" style="margin-top: 1rem;">upload</button><br>
 
+       </div><br>
+       <div style="background-color: aquamarine;">
+       <h3>Continue with phone auth</h3>
 
+       <input placeholder="Enter your phone number" id="phone"type="number" style="border-color: chartreuse;"></input><br>
+       
+       <button id="otp">get otp</button>
+       <div id="recaptcha-container"></div>
+
+       <h4>enter your otp</h4>
+       <input placeholder="Enter your otp" id="otptx"type="number" style="border-color: chartreuse;"></input><br>
+       <button id="otpbtn">submit otp</button>
+
+
+       </div>
         
         
     </div>
@@ -28,9 +43,11 @@
     </div>
 </body>
 
+
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-auth.js"></script>
 
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
@@ -48,6 +65,8 @@
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
+
+  
 </script>
 
 <script src="js/main.js"></script>
